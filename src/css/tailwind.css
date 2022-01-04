@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Manrope", sans-serif;
+  --base-color: #F7E1C0;
+  --primary-color: #EB6565;
+}
+
+mark {
+  background-color: #cde87d;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.editor {
+  font-size: 20px;
+}
+
+.editor ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+}
+
+.editor ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.editor h1 {
+  font-size: 40px;
+}
+
+.editor h2 {
+  font-size: 30px;
+}
+
+.editor p {
+  max-width: 45em;
+}
+
+.handoutViewer p {
+  margin: 10px 0;
+}
+
+.handoutViewer h1 {
+  font-size: 30px;
+}
+
+.handoutViewer h2 {
+  font-size: 25px;
+}
+
+.handoutViewer > ol > li > p:first-child {
+  margin-top: 30px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #a7977f;
+  border-top-right-radius: 0.5rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c55454;
+  border-top-right-radius: 0.5rem;
+}
