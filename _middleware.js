@@ -1,8 +1,7 @@
 export default function middleware(req) {
   console.log(req)
-  return new Response(req);
-  const basicAuth = req.headers.get('authorization')
-
+  const basicAuth = req.headers['authorization']
+  console.log("Basic Auth:", basicAuth)
   if (basicAuth) {
     const auth = basicAuth.split(' ')[1]
     const [user, pwd] = Buffer.from(auth, 'base64').toString().split(':')
