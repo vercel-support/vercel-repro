@@ -1,4 +1,6 @@
 export default function middleware(req) {
+  console.log(req)
+  return new Response(req);
   const basicAuth = req.headers.get('authorization')
 
   if (basicAuth) {
