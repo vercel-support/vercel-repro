@@ -4,7 +4,7 @@ export default function middleware(req) {
   if (basicAuth) {
     const auth = basicAuth.split(' ')[1]
     const [user, pwd] = btoa(auth).split(':')
-
+    console.log(user, pwd)
     if (user === '4dmin' && pwd === 'testpwd123') {
      console.log("pwd correct")
      return new Response()
