@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server';
-
 export default function middleware(req) {
   console.log(req)
   const basicAuth = req.headers['authorization']
@@ -9,7 +7,7 @@ export default function middleware(req) {
     const [user, pwd] = Base64.decode(auth).split(':')
 
     if (user === '4dmin' && pwd === 'testpwd123') {
-     return NextResponse.next()
+     return true
     }
   }
 
