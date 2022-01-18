@@ -15,10 +15,5 @@ export function middleware(req) {
     }
   } */
 
-  return new Response('Auth required', {
-    status: 401,
-    headers: {
-      'WWW-Authenticate': 'Basic realm="Secure Area"',
-    },
-  })
+  return new Response('Hello, world!');
 }
