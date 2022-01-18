@@ -1,5 +1,5 @@
 //import { NextResponse } from 'next/server';
-export function middleware(req) {
+export default function middleware(req) {
  console.log(req)
  /*  const basicAuth = req.headers.get('authorization')
 
